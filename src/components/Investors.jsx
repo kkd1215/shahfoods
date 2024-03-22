@@ -93,32 +93,32 @@ export default function Investors() {
 
         <details>
           <summary>
-            <a href="#">Important Dates</a>
+            <a>Important Dates</a>
           </summary>
         </details>
 
         <details>
           <summary>
-            <a href="#">BSE Code - 532167, ASE Code- 42227</a>
+            <a>BSE Code - 532167, ASE Code- 42227</a>
           </summary>
         </details>
 
         <details>
           <summary>
-            <a href="#">Commencement Certificate</a>
+            <a>Commencement Certificate</a>
           </summary>
         </details>
 
         <details>
           <summary>
-            <a href="#">Certificate of Incorporation</a>
+            <a>Certificate of Incorporation</a>
           </summary>
         </details>
 
         <details>
           <summary>
             {" "}
-            <a href="#">Policies</a>
+            <a>Policies</a>
           </summary>
         </details>
         <details>
