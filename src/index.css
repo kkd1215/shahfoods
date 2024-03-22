@@ -1,0 +1,516 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Bungee+Spice&family=Caveat&family=Combo&family=Concert+One&family=Dancing+Script&family=DynaPuff:wght@400;500&family=Lexend:wght@500&family=Lobster&family=Pacifico&family=Permanent+Marker&family=Poppins:wght@100&family=Qwitcher+Grypen&family=Roboto:ital,wght@1,100&family=Rubik:wght@300&family=Silkscreen&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  /* --TextColor:#ffffff;
+  --PrimaryColor: #607d8b;
+  --SecondaryColor: #ff5722;
+  --AccentColor: #101010;
+  --NeutralColor: #ffffff;
+  --BackgroundColor: #e0e0e0;
+ */
+
+  /* --TextColor: #ffffff;
+  --PrimaryColor: #ff5252;
+  --SecondaryColor: #b6a82f;
+  --AccentColor: #9c27b0;
+  --NeutralColor: #212121;
+  --BackgroundColor: #eeeeee; */
+
+  /* --TextColor:#101010;
+  --PrimaryColor: #673AB7;
+  --SecondaryColor: #FFC107;
+  --AccentColor: #795548;
+  --NeutralColor: #FFFFFF;
+  --BackgroundColor: #F5F5F5; */
+
+
+  --TextColor: #ffffff;
+  --PrimaryColor: #FFC107;
+  --SecondaryColor: #1BA098;
+  --AccentColor: #FFC107 ;
+  --NeutralColor: none;
+  --BackgroundColor: #051622 ;
+}
+body {
+  width: 100%;
+  height: 100%;
+  color: var(--TextColor);
+}
+body {
+  scrollbar-width: auto;
+  scrollbar-color: #dfe9eb;
+  overflow-y: scroll;
+  background: var(--BackgroundColor);
+}
+
+body::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-color: var(--SecondaryColor);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--PrimaryColor);
+}
+
+body::-webkit-scrollbar-thumb:active {
+  background-color: #2dc861;
+}
+section {
+  overflow: hidden;
+  white-space: wrap;
+  word-break: break-word;
+}
+#hiddenMenu,
+#hiddenCloseMenu {
+  display: none;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: var(--NeutralColor);
+  position: relative;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+nav ul li {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 3rem;
+  color: var(--TextColor);
+  cursor: pointer;
+  transition: 0.2s ease all;
+}
+nav ul li:hover {
+  color: var(--SecondaryColor);
+}
+nav ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  height: 90vh;
+  width: 100%;
+  background: var(--NeutralColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header .menu {
+  position: absolute;
+  top: 1rem;
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .menu h2 {
+  font-size: 6rem;
+  color: var(--TextColor);
+  cursor: pointer;
+  margin: 1rem;
+}
+header h1 {
+  font-family: "Belanosima", sans-serif;
+  font-size: 4rem;
+  width: 50rem;
+  color: var(--TextColor);
+  text-align: center;
+}
+header h1 span {
+  color: var(--SecondaryColor);
+}
+header p {
+  color: var(--PrimaryColor);
+  font-size: 1.5rem;
+  width: 50rem;
+  text-align: center;
+  margin: 1rem 0;
+  font-weight: 400;
+}
+header h3 {
+  color: var(--TextColor);
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 1rem 2rem;
+  background: var(--SecondaryColor);
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+section.Profile {
+  padding: 3rem;
+}
+section.Profile h1 {
+  font-size: 4rem;
+  margin: 0.5rem;
+  color: var(--SecondaryColor);
+  font-family: "Belanosima", sans-serif;
+}
+section.Profile .profileMainSection {
+  padding: 1rem;
+}
+section.Profile .profileMainSection .card {
+  margin: 2rem 0;
+}
+section.Profile .profileMainSection .card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  padding: 0 0 0 0.5rem;
+  border-left: 0.5rem solid var(--PrimaryColor);
+}
+section.Profile .profileMainSection .card p {
+  margin: 0 1rem;
+  font-size: 1.5rem;
+}
+section.contact {
+  padding: 3rem;
+}
+section.contact h1 {
+  font-size: 3rem;
+  margin: 0.5rem;
+  color: var(--SecondaryColor);
+  font-family: "Belanosima", sans-serif;
+}
+section.contact .mainContactBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  background: var(--SecondaryColor);
+  padding: 6rem;
+  border-radius: 2rem;
+}
+section.contact .mainContactBox .imageBox {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.contact .mainContactBox .imageBox img {
+  height: 20rem;
+}
+section.contact .mainContactBox .descriptionContact {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+section.contact .mainContactBox .descriptionContact h3 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: var(--NeutralColor);
+  font-size: 1.5rem;
+}
+section.contact .mainContactBox .descriptionContact p {
+  color: var(--TextColor);
+  margin: 0.5rem;
+  font-size: 1.1rem;
+}
+section.contact .mainContactBox .descriptionContact .items {
+  margin: 0 0 1rem 0;
+}
+section.Officer {
+  padding: 3rem;
+}
+section.Officer h1 {
+  font-size: 3rem;
+  margin: 0.5rem;
+  color: var(--SecondaryColor);
+  font-family: "Belanosima", sans-serif;
+}
+section.Officer ul {
+  list-style: none;
+  margin: 3rem 0;
+}
+section.Officer ul li {
+  margin: 1rem 1.5rem;
+  font-size: 1.2rem;
+}
+section.Officer ul li span {
+  height: 100%;
+  margin: 0 0.5rem 0 0;
+}
+section.Officer .mainOfficerDetailSection {
+  margin: 2rem 1rem;
+}
+section.Officer ul h3 {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+section.reports {
+  padding: 3rem;
+}
+section.reports h1 {
+  font-size: 3rem;
+  margin: 0.5rem;
+  color: var(--SecondaryColor);
+  font-family: "Belanosima", sans-serif;
+}
+section.reports .mainReportSection {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+section.reports .mainReportSection button {
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  border: none;
+  background: var(--PrimaryColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: var(--TextColor);
+  height: 4.5rem;
+}
+section.Committees {
+  padding: 3rem;
+}
+section.Committees h1 {
+  font-size: 3rem;
+  margin: 0.5rem;
+  color: var(--SecondaryColor);
+  font-family: "Belanosima", sans-serif;
+}
+section.Committees h2 {
+  font-size: 1.5rem;
+  margin: 1rem 0 1rem 1rem;
+}
+section.Committees .mainCommitteesSection {
+  padding: 0 1.5rem;
+}
+section.Committees .mainCommitteesSection .cardCom {
+  margin: 1rem 0;
+  padding: 0 0.5rem;
+  border-left: 0.5rem solid var(--SecondaryColor);
+  border-radius: 1rem 0 0 0;
+}
+section.Committees .mainCommitteesSection .cardCom h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+section.Committees .mainCommitteesSection .cardCom p {
+  font-size: 1.1rem;
+}
+section.business {
+  padding: 3rem;
+  background-color: var(--SecondaryColor);
+}
+section.business h1 {
+  width: 100%;
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Belanosima", sans-serif;
+  color: var(--TextColor);
+}
+section.business .mainBusinessSection {
+  margin: 4rem 0 0 0;
+}
+section.business .mainBusinessSection h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 2rem 0;
+  border-bottom: 0.1rem solid #445;
+  color: var(--TextColor);
+}
+section.business .mainBusinessSection h3 span {
+  margin-top: 0.5rem;
+}
+section.business .mainBusinessSection h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--TextColor);
+}
+section.business .mainBusinessSection p {
+  font-size: 1.5rem;
+  font-family: serif;
+  color: var(--TextColor);
+}
+section.newspaper {
+  padding: 3rem;
+}
+section.newspaper h1 {
+  font-size: 4rem;
+  margin: 0.5rem;
+  color: var(--SecondaryColor);
+  font-family: "Belanosima", sans-serif;
+}
+#LinkedList6 {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+}
+#LinkedList6 li {
+  margin: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+  height: auto;
+  width: 50rem;
+}
+
+#LinkedList6 li ul li {
+  margin: 0.5rem 1rem;
+  font-size: 1.2rem;
+}
+#LinkedList6 li ul li a {
+  color: var(--SecondaryColor);
+  font-size: 1.5rem;
+}
+.arrowUp h1 {
+  position: fixed;
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--PrimaryColor);
+  right: 3rem;
+  bottom: 3rem;
+  font-size: 2.5rem;
+}
+section.investors {
+  padding: 3rem;
+}
+
+section.investors h1 {
+  font-size: 4rem;
+  margin: 0.5rem;
+  color: var(--SecondaryColor);
+  font-family: "Belanosima", sans-serif;
+}
+section.investors .mainInverstorsSection {
+  padding: 1rem;
+}
+section.investors .mainInverstorsSection details {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+section.investors .mainInverstorsSection details summary a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+section.investors .mainInverstorsSection details summary {
+  cursor: pointer;
+  font-size: 2rem;
+}
+section.investors .mainInverstorsSection details summary.summeryItems{
+  padding: .5rem 1rem;
+    color: var(--AccentColor);
+}
+section.investors .mainInverstorsSection details.subItem{
+ margin: 1rem;
+}
+section.investors .mainInverstorsSection details summary.summeryItems span{
+  margin-right: .5rem;
+}
+@media screen and (max-width: 850px) {
+  html {
+    font-size: 55%;
+  }
+  header {
+    height: 100vh;
+  }
+  #hiddenMenu,
+  #hiddenCloseMenu {
+    display: flex;
+  }
+  nav .cross {
+    position: absolute;
+    top: 1rem;
+    width: 100%;
+  }
+  header h1 {
+    width: 90%;
+  }
+  header p {
+    width: 90%;
+    font-size: 2rem;
+  }
+  nav .cross h1 {
+    font-size: 5rem;
+    text-align: end;
+
+    margin: 1rem;
+    color: var(--TextColor);
+    cursor: pointer;
+    width: 100%;
+  }
+  section.contact .mainContactBox .imageBox {
+    display: none;
+  }
+  section.contact .mainContactBox .descriptionContact {
+    width: 100%;
+  }
+  nav {
+    height: 70rem;
+    width: 30rem;
+    position: fixed;
+    left: -50rem;
+    transition: 0.3s ease-in-out;
+    z-index: 999;
+    background: var(--SecondaryColor);
+    border-radius: 0 0 2rem 0;
+  }
+  nav ul li:hover {
+    color: var(--TextColor);
+  }
+  nav ul {
+    flex-direction: column;
+    height: 100%;
+  }
+  nav ul li {
+    margin: 2rem 0;
+    width: 80%;
+    font-size: 1.7rem;
+    justify-content: start;
+  }
+}
+@media screen and (max-width: 620px) {
+  html {
+    font-size: 45%;
+  }
+}
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 40%;
+  }
+}
