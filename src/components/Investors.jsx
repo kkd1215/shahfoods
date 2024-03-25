@@ -2,41 +2,190 @@ import React from "react";
 import { FaFilePdf } from "react-icons/fa";
 import { BsFiletypeXml } from "react-icons/bs";
 export default function Investors() {
-  const disclosures20 = [];
-  const disclosures21 = [];
-  const disclosures22 = [];
-  for (let i = 1; i <= 22; i++) {
-    disclosures20.push({
-      name: `Disclosures ${i}`,
-      pdf: `/Disclosures/2020-21/${i}.pdf`,
-    });
-  }
-  for (let i = 1; i <= 23; i++) {
-    disclosures21.push({
-      name: `Disclosures ${i}`,
-      pdf: `/Disclosures/2021-22/${i}.pdf`,
-    });
-  }
-  for (let i = 1; i <= 24; i++) {
-    disclosures22.push({
-      name: `Disclosures ${i}`,
-      pdf: `/Disclosures/2021-22/${i}.pdf`,
-    });
-  }
+  const disclosures20 = [
+    {
+      name: `74(5)`,
+      pdf: `/Disclosures/2020-21/${1}.pdf`,
+    },
+    {
+      name: `REGULATION 74(5)`,
+      pdf: `/Disclosures/2020-21/${2}.pdf`,
+    },
+    {
+      name: `Certificate of Bigshare UR 74(5) on 31-12-20-merged (1)`,
+      pdf: `/Disclosures/2020-21/${3}.pdf`,
+    },
+    {
+      name: `40(9)`,
+      pdf: `/Disclosures/2020-21/${4}.pdf`,
+    },
+    {
+      name: `Intimation to BSE for BM for Q-3`,
+      pdf: `/Disclosures/2020-21/${5}.pdf`,
+    },
+    {
+      name: `Compliance Certificate Regulation 7(3) of SEBI (1)_recognized (1)`,
+      pdf: `/Disclosures/2020-21/${6}.pdf`,
+    },
+    {
+      name: `Outcome with result and review report on 31-12-20 (1)`,
+      pdf: `/Disclosures/2020-21/${7}.pdf`,
+    },
+    {
+      name: `Result for 30-6-20 alongwith Review Report`,
+      pdf: `/Disclosures/2020-21/${8}.pdf`,
+    },
+    {
+      name: `Non Applicability compliance report for 31-3-21_24A`,
+      pdf: `/Disclosures/2020-21/${9}.pdf`,
+    },
+    {
+      name: `Outcome with result and review report for 30-9-20`,
+      pdf: `/Disclosures/2020-21/${10}.pdf`,
+    },
+    {
+      name: `Compliance Certificate U R 7-3 of SEBI (1)`,
+      pdf: `/Disclosures/2020-21/${11}.pdf`,
+    },
+    {
+      name: `Disclosure of Related Party for 31-3-20 (1)`,
+      pdf: `/Disclosures/2020-21/${12}.pdf`,
+    },
+    {
+      name: `Non applicability of Regu.27(2) of SEBI_recognized`,
+      pdf: `/Disclosures/2020-21/${13}.pdf`,
+    },
+    {
+      name: `intimation for BM on 29-6-21 (1) ocr`,
+      pdf: `/Disclosures/2020-21/${14}.pdf`,
+    },
+    {
+      name: `Outcome Letter on 29-6-21 and audited result`,
+      pdf: `/Disclosures/2020-21/${15}.pdf`,
+    },
+    {
+      name: `Disclosure of Related Party Transactions (1)`,
+      pdf: `/Disclosures/2020-21/${16}.pdf`,
+    },
+  ];
+  const disclosures21 = [
+    { name: "74(5)", pdf: "/Disclosures/2021-22/1.pdf" },
+    {
+      name: "CLOSURE OF TRADING WINDOW_31.03.2022",
+      pdf: "/Disclosures/2021-22/2.pdf",
+    },
+    { name: "CLOSURE OF TRADING WINDOW", pdf: "/Disclosures/2021-22/3.pdf" },
+    { name: "UPLOAD_30.09.2021", pdf: "/Disclosures/2021-22/4.pdf" },
+    { name: "Reg74(5)_shah foods", pdf: "/Disclosures/2021-22/5.pdf" },
+    {
+      name: "BOARD MEETING INTIMATION 30.06.21",
+      pdf: "/Disclosures/2021-22/6.pdf",
+    },
+    {
+      name: "Shah Foods_reg 74(5)_31032022_upload",
+      pdf: "/Disclosures/2021-22/7.pdf",
+    },
+    {
+      name: "Board meeting intimation_december2021",
+      pdf: "/Disclosures/2021-22/8.pdf",
+    },
+    {
+      name: "Outcome letter dated 10-08-2021",
+      pdf: "/Disclosures/2021-22/9.pdf",
+    },
+    {
+      name: "REG 40(9)_SHAH FOODS_MARCH 2022",
+      pdf: "/Disclosures/2021-22/10.pdf",
+    },
+    { name: "31.12.2021", pdf: "/Disclosures/2021-22/11.pdf" },
+    { name: "NON APPLICABILITY OF 24A", pdf: "/Disclosures/2021-22/12.pdf" },
+    {
+      name: "outcome with result for 30-09-2021",
+      pdf: "/Disclosures/2021-22/13.pdf",
+    },
+    {
+      name: "Declaration Non Applicability as Large Entity",
+      pdf: "/Disclosures/2021-22/14.pdf",
+    },
+    {
+      name: "0244092a-0903-4852-b950-ec77f01c6bea",
+      pdf: "/Disclosures/2021-22/15.pdf",
+    },
+    {
+      name: "Board  Meeting Intimation_31.03.2022",
+      pdf: "/Disclosures/2021-22/16.pdf",
+    },
+  ];
+  const disclosures22 = [
+    {
+      name: "Closing of Trading Window_30.09.2022",
+      pdf: "/Disclosures/2021-22/1.pdf",
+    },
+    {
+      name: "closing of trading window_31.03.2023",
+      pdf: "/Disclosures/2021-22/2.pdf",
+    },
+    {
+      name: "Closure of Trdaing Window_31122022",
+      pdf: "/Disclosures/2021-22/3.pdf",
+    },
+    {
+      name: "non applicability of large corporate entity",
+      pdf: "/Disclosures/2021-22/4.pdf",
+    },
+    { name: "Reg 74(5)_Upload", pdf: "/Disclosures/2021-22/5.pdf" },
+    { name: "REg74(5)_march 2023", pdf: "/Disclosures/2021-22/6.pdf" },
+    { name: "Upload_Reg 74(5)", pdf: "/Disclosures/2021-22/7.pdf" },
+    { name: "Upload_Shah Foods 74(5)", pdf: "/Disclosures/2021-22/8.pdf" },
+    { name: "7(3)_Upload", pdf: "/Disclosures/2021-22/9.pdf" },
+    { name: "Board Meeting_31.12.2022", pdf: "/Disclosures/2021-22/10.pdf" },
+    { name: "Intimation_30092022", pdf: "/Disclosures/2021-22/11.pdf" },
+    {
+      name: "Outcome with financials_02112022",
+      pdf: "/Disclosures/2021-22/12.pdf",
+    },
+    { name: "Outcome31122022", pdf: "/Disclosures/2021-22/13.pdf" },
+    { name: "Reg 40(9)_31.03.2023", pdf: "/Disclosures/2021-22/14.pdf" },
+    {
+      name: "Upload Outcome with result for Q-1 with review reports_30.06.2022",
+      pdf: "/Disclosures/2021-22/15.pdf",
+    },
+    {
+      name: "Upload Results in News Papers for 30-6-22",
+      pdf: "/Disclosures/2021-22/16.pdf",
+    },
+    {
+      name: "Upload_Newspaper Advertisement",
+      pdf: "/Disclosures/2021-22/17.pdf",
+    },
+    {
+      name: "Upload_Non applicability 24A",
+      pdf: "/Disclosures/2021-22/18.pdf",
+    },
+    {
+      name: "Outcome with audited results",
+      pdf: "/Disclosures/2021-22/19.pdf",
+    },
+    {
+      name: "Upload_Related Party Transactions",
+      pdf: "/Disclosures/2021-22/20.pdf",
+    },
+  ];
+
   const handleClickOne = (link) => {
     window.open(link, "_blank");
   };
   const patternOne = (num) => {
-    window.open(`/sharegoldingPattern/2019-20/${num}.xml`, "_blank");
+    window.open(`/SHAREHOLDING PATTERN/2019-20/${num}.xml`, "_blank");
   };
   const patternTwo = (num) => {
-    window.open(`/sharegoldingPattern/2020-21/${num}.xml`, "_blank");
+    window.open(`/SHAREHOLDING PATTERN/2020-21/${num}.xml`, "_blank");
   };
   const patternThree = (num) => {
-    window.open(`/sharegoldingPattern/2021-22/${num}.xml`, "_blank");
+    window.open(`/SHAREHOLDING PATTERN/2021-22/${num}.xml`, "_blank");
   };
   const patternFour = (num) => {
-    window.open(`/sharegoldingPattern/2022-23/${num}.xml`, "_blank");
+    window.open(`/SHAREHOLDING PATTERN/2022-23/${num}.xml`, "_blank");
   };
   const financialResults = (num) => {
     window.open(`/financialResults/2019-20/${num}.pdf`, "_blank");
@@ -53,9 +202,9 @@ export default function Investors() {
   const financialResultsFour = (num) => {
     window.open(`/financialResults/2022-23/${num}.pdf`, "_blank");
   };
-  const miscellaneous = (num)=>{
+  const miscellaneous = (num) => {
     window.open(`/miscellaneous/${num}.pdf`, "_blank");
-  }
+  };
   return (
     <section className="investors" id="investors">
       <h1>Investors</h1>
@@ -92,34 +241,23 @@ export default function Investors() {
         </details>
 
         <details>
-          <summary>
-            <a>Important Dates</a>
-          </summary>
+          <summary>Important Dates</summary>
         </details>
 
         <details>
-          <summary>
-            <a>BSE Code - 532167, ASE Code- 42227</a>
-          </summary>
+          <summary>BSE Code - 532167, ASE Code- 42227</summary>
         </details>
 
         <details>
-          <summary>
-            <a>Commencement Certificate</a>
-          </summary>
+          <summary>Commencement Certificate</summary>
         </details>
 
         <details>
-          <summary>
-            <a>Certificate of Incorporation</a>
-          </summary>
+          <summary>Certificate of Incorporation</summary>
         </details>
 
         <details>
-          <summary>
-            {" "}
-            <a>Policies</a>
-          </summary>
+          <summary> Policies</summary>
         </details>
         <details>
           <summary>Investors Grievances</summary>
@@ -127,11 +265,9 @@ export default function Investors() {
         <details>
           <summary>Investor Correspondence</summary>
         </details>
+
         <details>
           <summary>Annual Return</summary>
-        </details>
-        <details>
-          <summary>Annual Secretarial Compliance Report</summary>
           <details className="subItem">
             <summary>2019-20</summary>
             <summary
@@ -333,7 +469,7 @@ export default function Investors() {
               <span>
                 <BsFiletypeXml />
               </span>
-              Pattern one
+              519031_17012020 Shah Foods - 31.12.2019 xml file to upload
             </summary>
             <summary
               onClick={() => {
@@ -344,7 +480,7 @@ export default function Investors() {
               <span>
                 <BsFiletypeXml />
               </span>
-              Pattern two
+              Shahfoods Shareholding Pattern 30 09 2019 upload
             </summary>
             <summary
               onClick={() => {
@@ -355,7 +491,7 @@ export default function Investors() {
               <span>
                 <BsFiletypeXml />
               </span>
-              Pattern three
+              SHP_REVISED_SHAH FOODS_310319
             </summary>
           </details>
 
@@ -370,7 +506,7 @@ export default function Investors() {
               <span>
                 <BsFiletypeXml />
               </span>
-              Pattern one
+              SHP_31.03.2021
             </summary>
             <summary
               onClick={() => {
@@ -381,7 +517,7 @@ export default function Investors() {
               <span>
                 <BsFiletypeXml />
               </span>
-              Pattern two
+              UPLOAD SHP SHAHFOODS 30092020
             </summary>
             <summary
               onClick={() => {
@@ -392,7 +528,7 @@ export default function Investors() {
               <span>
                 <BsFiletypeXml />
               </span>
-              Pattern three
+              upload xml_30.06.2020
             </summary>
             <summary
               onClick={() => {
@@ -403,7 +539,7 @@ export default function Investors() {
               <span>
                 <BsFiletypeXml />
               </span>
-              Pattern four
+              upload519031_31.12.2020r
             </summary>
           </details>
           <details className="subItem">
@@ -417,7 +553,7 @@ export default function Investors() {
               <span>
                 <BsFiletypeXml />
               </span>
-              Pattern one
+              upload xml_30.06.2021
             </summary>
             <summary
               onClick={() => {
@@ -428,7 +564,7 @@ export default function Investors() {
               <span>
                 <BsFiletypeXml />
               </span>
-              Pattern Two
+              upload xml_30.09.2021
             </summary>
             <summary
               onClick={() => {
@@ -439,7 +575,7 @@ export default function Investors() {
               <span>
                 <BsFiletypeXml />
               </span>
-              Pattern three
+              UPLOAD_519031_31032022
             </summary>
             <summary
               onClick={() => {
@@ -450,7 +586,7 @@ export default function Investors() {
               <span>
                 <BsFiletypeXml />
               </span>
-              Pattern four
+              XML_UPLOAD_31.12.2021
             </summary>
           </details>
           <details className="subItem">
@@ -464,7 +600,7 @@ export default function Investors() {
               <span>
                 <BsFiletypeXml />
               </span>
-              Pattern one
+              Upload_xml_30.06.2022
             </summary>
 
             <summary
@@ -476,7 +612,7 @@ export default function Investors() {
               <span>
                 <BsFiletypeXml />
               </span>
-              Pattern two
+              UPLOAD_519031_30.09.2022
             </summary>
 
             <summary
@@ -488,7 +624,7 @@ export default function Investors() {
               <span>
                 <BsFiletypeXml />
               </span>
-              Pattern three
+              Upload_519031_31.03.2023
             </summary>
 
             <summary
@@ -500,7 +636,7 @@ export default function Investors() {
               <span>
                 <BsFiletypeXml />
               </span>
-              Pattern four
+              UPLOAD_SHP_31122022
             </summary>
 
             <summary
@@ -512,7 +648,7 @@ export default function Investors() {
               <span>
                 <BsFiletypeXml />
               </span>
-              Pattern five
+              Upload_xml_30.06.2022
             </summary>
           </details>
         </details>
@@ -561,6 +697,17 @@ export default function Investors() {
               <FaFilePdf />
             </span>
             Upload_Outcome_03.09.2022
+          </summary>
+          <summary
+            onClick={() => {
+              miscellaneous(5);
+            }}
+            className="summeryItems"
+          >
+            <span>
+              <FaFilePdf />
+            </span>
+            Upload_BM Intimation
           </summary>
         </details>
       </div>
