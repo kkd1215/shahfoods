@@ -344,7 +344,6 @@ section.business .mainBusinessSection h3 {
   display: flex;
   flex-direction: column;
   padding: 0 0 2rem 0;
-  border-bottom: 0.1rem solid #445;
   color: var(--TextColor);
 }
 section.business .mainBusinessSection h3 span {

@@ -25,7 +25,6 @@ export default function Header() {
       <p>
         The Company has been listed in BSE (Bombay Stock Exchange)
       </p>
-      <h3>Established in year 1995</h3>
     </header>
   );
 }

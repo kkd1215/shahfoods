@@ -16,26 +16,20 @@ export default function Contact() {
           <div className="cardCom">
             <h3>Audit Committee</h3>
             <p>
-              Mamta Pachauri: Chairman; Parminder Sharma: Member; Janak Raj
-              Sharma: Member w.e.f. 13.02.2016; S. S. Bindra: Member upto
-              13.02.2016
+              
             </p>
           </div>
           <div className="cardCom">
             <h3>Nomination & Remuneration Committees Composition</h3>
             <p>
-              Mamta Pachauri: Chairman; Parminder Sharma: Member; Janak Raj
-              Sharma: Member w.e.f. 13.02.2016; S. S. Bindra: Member upto
-              13.02.2016
+              
             </p>
           </div>
 
           <div className="cardCom">
             <h3>Stake holders Relationship Committees Composition</h3>
             <p>
-              Parminder Sharma: Member; Janak Raj Sharma: Member w.e.f.
-              13.02.2016; Ms. Mamta Pachauri member w.e.f. 30.03.2019; S. S.
-              Bindra: Member upto 13.02.2016
+              
             </p>
           </div>
 
@@ -129,9 +123,12 @@ export default function Contact() {
                 <FaAddressBook />
                 &nbsp;Company’s Registered Office Address
               </h3>
-              <p>301. SARTHIK SQUARE</p>
-              <p>. NR. SHAPATH - 3. S.G. HIGHWAY. BODAKDEV</p>
-              <p>AHMEDABAD - 380054. GUJARAT, INDIA.</p>
+              <address>
+                <p>301, Sarthik Square,</p>
+                <p>Near Shapath - 3, S.G. Highway, Bodakdev,</p>
+                <p>Ahmedabad - 380054, Gujarat, India.</p>
+            </address>
+
             </div>
             <div className="person items">
               <h3>
