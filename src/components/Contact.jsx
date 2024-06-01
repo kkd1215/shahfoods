@@ -42,56 +42,12 @@ export default function Contact() {
         </div>
       </section>
       <section className="Officer">
-        <h1>KMP Compliance Officer and RTA</h1>
-        <div className="mainOfficerDetailSection">
-          <ul>
-            <h3>
-              <IoPerson />
-              &nbsp;Key Managerial Personnel of the Company are as under
-            </h3>
-            <li>
-              <span>
-                <VscActivateBreakpoints />
-              </span>
-              Bhawani Shankar Goyal, Managing Director, DIN-03255804, Address:H
-              No.77,Nangal Chaudhary Teh. Narnaul,Dist- Mahindergarh,
-              Haryana-123023
-            </li>
-            <li>
-              <span>
-                <VscActivateBreakpoints />
-              </span>{" "}
-              Gaurav Kathuria, Chief Financial Officer Address:S-59,Gali No- 2,
-              Block S, South Anarkalikrishna Nagar Delhi 110051,Resigned from
-              31-August-2022
-            </li>
-            <li>
-              <span>
-                <VscActivateBreakpoints />
-              </span>
-              Pankaj Singh, Company Secretary and Compliance Officer Address:
-              A-136, Vivek Vihar, Phase-1, East Delhi, New Delhi-110095
-            </li>
-          </ul>
-          <ul>
+        <h1>RTA</h1>
+        <div className="mainOfficerDetailSection">          <ul>
             <h3>
               <MdRealEstateAgent />
               &nbsp;Registrar & Share Transfer Agents:
             </h3>
-            <li>
-              <span>
-                <VscActivateBreakpoints />
-              </span>
-              Alankit Assignments Limited 205-208, Anarkali Complex, Jhandewalan
-              Extention, New Delhi – 110055
-            </li>
-            <li>
-              <span>
-                <VscActivateBreakpoints />
-              </span>
-              Email ID: lalitap@alankit.com ,Contact Nos.:011-42541958/1234/
-              ,Website:www.alankit.com
-            </li>
             <li>
               {" "}
               <span>
@@ -129,16 +85,6 @@ export default function Contact() {
                 <p>Ahmedabad - 380054, Gujarat, India.</p>
             </address>
 
-            </div>
-            <div className="person items">
-              <h3>
-                <MdContacts />
-                &nbsp;Contact Person Name and Numbers for Grievances redressal
-              </h3>
-              <p>
-                <span>Company Secretary:</span>Pankaj Mahadeo Singh
-                +91-9155012094
-              </p>
             </div>
             <div className="email items">
               <h3>
