@@ -137,8 +137,8 @@ header .menu h2 {
 }
 header h1 {
   font-family: "Belanosima", sans-serif;
-  font-size: 4rem;
-  width: 50rem;
+  font-size: 3.5rem;
+  width: 60rem;
   color: var(--TextColor);
   text-align: center;
 }
