@@ -202,6 +202,11 @@ export default function Investors() {
   const financialResultsFour = (num) => {
     window.open(`/financialResults/2022-23/${num}.pdf`, "_blank");
   };
+
+  const financialResultsFive = (num) => {
+    window.open(`/financialResults/2023-24/${num}.pdf`, "_blank");
+  };
+
   const miscellaneous = (num) => {
     window.open(`/miscellaneous/${num}.pdf`, "_blank");
   };
@@ -393,6 +398,21 @@ export default function Investors() {
                 <FaFilePdf />
               </span>
               Upload Outcome with result for Q-1 with review reports_30.06.2022
+            </summary>
+          </details>
+          <details className="subItem">
+            <summary>2023-24</summary>
+
+            <summary
+              onClick={() => {
+                financialResultsFive(1);
+              }}
+              className="summeryItems"
+            >
+              <span>
+                <FaFilePdf />
+              </span>
+              Annual Report
             </summary>
           </details>
         </details>
