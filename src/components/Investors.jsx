@@ -171,6 +171,13 @@ export default function Investors() {
       pdf: "/Disclosures/2021-22/20.pdf",
     },
   ];
+  const disclosures24 = [
+    {
+      name: "Q-2-ADVERTISEMENT (signed) F",
+      pdf: "/Disclosures/2024-25/1.pdf",
+    }
+  ];
+
 
   const handleClickOne = (link) => {
     window.open(link, "_blank");
@@ -459,6 +466,28 @@ export default function Investors() {
           <details className="subItem">
             <summary>2022-23</summary>
             {disclosures22.map((e, index) => {
+              return (
+                <summary
+                  key={index}
+                  className="summeryItems"
+                  onClick={() => {
+                    handleClickOne(e.pdf);
+                  }}
+                >
+                  <span>
+                    <FaFilePdf />
+                  </span>
+                  {e.name}
+                </summary>
+              );
+            })}
+          </details>
+        </details>
+        <details>
+          <summary>Disclosure under regulation 33 of SEBI LODR</summary>
+          <details className="subItem">
+            <summary>2024-25</summary>
+            {disclosures24.map((e, index) => {
               return (
                 <summary
                   key={index}
