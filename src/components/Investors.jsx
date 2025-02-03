@@ -173,8 +173,12 @@ export default function Investors() {
   ];
   const disclosures24 = [
     {
-      name: "Q-2-ADVERTISEMENT (signed) F",
-      pdf: "/Disclosures/2024-25/1.pdf",
+      name: "Q2 Results",
+      pdf: "/Disclosures/2024-25/Q2.pdf",
+    },
+    {
+      name: "Q3 Results",
+      pdf: "/Disclosures/2024-25/Q3.pdf",
     }
   ];
 
