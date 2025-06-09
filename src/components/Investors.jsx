@@ -179,6 +179,10 @@ export default function Investors() {
     {
       name: "Q3 Results",
       pdf: "/Disclosures/2024-25/Q3.pdf",
+    },
+    {
+      name: "Q4 Results",
+      pdf: "/Disclosures/2024-25/Q4.pdf",
     }
   ];
 
