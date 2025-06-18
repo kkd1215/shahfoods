@@ -222,6 +222,10 @@ export default function Investors() {
     window.open(`/financialResults/2023-24/${num}.pdf`, "_blank");
   };
 
+  const financialResultsSix = (num) => {
+    window.open(`/financialResults/2024-25/${num}.pdf`, "_blank");
+  };
+
   const miscellaneous = (num) => {
     window.open(`/miscellaneous/${num}.pdf`, "_blank");
   };
@@ -287,7 +291,7 @@ export default function Investors() {
         </details>
 
         <details>
-          <summary>Annual Return</summary>
+          <summary>Annual Report</summary>
           <details className="subItem">
             <summary>2019-20</summary>
             <summary
@@ -421,6 +425,21 @@ export default function Investors() {
             <summary
               onClick={() => {
                 financialResultsFive(1);
+              }}
+              className="summeryItems"
+            >
+              <span>
+                <FaFilePdf />
+              </span>
+              Annual Report
+            </summary>
+          </details>
+          <details className="subItem">
+            <summary>2024-25</summary>
+
+            <summary
+              onClick={() => {
+                financialResultsSix(1);
               }}
               className="summeryItems"
             >
