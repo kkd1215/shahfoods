@@ -186,6 +186,13 @@ export default function Investors() {
     }
   ];
 
+  const disclosures25 = [
+    {
+      name: "Q1 Results",
+      pdf: "/Disclosures/2025-26/Q1.pdf",
+    }
+  ];
+
 
   const handleClickOne = (link) => {
     window.open(link, "_blank");
@@ -515,6 +522,25 @@ export default function Investors() {
           <details className="subItem">
             <summary>2024-25</summary>
             {disclosures24.map((e, index) => {
+              return (
+                <summary
+                  key={index}
+                  className="summeryItems"
+                  onClick={() => {
+                    handleClickOne(e.pdf);
+                  }}
+                >
+                  <span>
+                    <FaFilePdf />
+                  </span>
+                  {e.name}
+                </summary>
+              );
+            })}
+          </details>
+          <details className="subItem">
+            <summary>2025-26</summary>
+            {disclosures25.map((e, index) => {
               return (
                 <summary
                   key={index}
