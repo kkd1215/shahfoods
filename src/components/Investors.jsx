@@ -190,6 +190,10 @@ export default function Investors() {
     {
       name: "Q1 Results",
       pdf: "/Disclosures/2025-26/Q1.pdf",
+    },
+    {
+      name: "Q2 Results",
+      pdf: "/Disclosures/2025-26/Q2.pdf",
     }
   ];
 
