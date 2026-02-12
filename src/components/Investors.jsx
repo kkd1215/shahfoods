@@ -201,6 +201,23 @@ export default function Investors() {
     }
   ];
 
+  const EGMNotice25 = [
+    {
+      name: "EOGM Notice",
+      pdf: "/EGMNotice/2025-26/EOGM Notice.pdf",
+    }
+  ];
+
+  const regulation1425 = [
+    {
+      name: "Cover Letter Target Company",
+      pdf: "/Regulation14/2025-26/Cover Letter Target Company.pdf",
+    },
+    {
+      name: "PA - SFL",
+      pdf: "/Regulation14/2025-26/PA - SFL.pdf",
+    }
+  ];
 
   const handleClickOne = (link) => {
     window.open(link, "_blank");
@@ -549,6 +566,50 @@ export default function Investors() {
           <details className="subItem">
             <summary>2025-26</summary>
             {disclosures25.map((e, index) => {
+              return (
+                <summary
+                  key={index}
+                  className="summeryItems"
+                  onClick={() => {
+                    handleClickOne(e.pdf);
+                  }}
+                >
+                  <span>
+                    <FaFilePdf />
+                  </span>
+                  {e.name}
+                </summary>
+              );
+            })}
+          </details>
+        </details>
+        <details>
+          <summary>Regulation 14 (1) of SEBI (SAST) Regulations, 2011</summary>
+          <details className="subItem">
+            <summary>2025-26</summary>
+            {regulation1425.map((e, index) => {
+              return (
+                <summary
+                  key={index}
+                  className="summeryItems"
+                  onClick={() => {
+                    handleClickOne(e.pdf);
+                  }}
+                >
+                  <span>
+                    <FaFilePdf />
+                  </span>
+                  {e.name}
+                </summary>
+              );
+            })}
+          </details>
+        </details>
+        <details>
+          <summary>EGM Notice</summary>
+          <details className="subItem">
+            <summary>2025-26</summary>
+            {EGMNotice25.map((e, index) => {
               return (
                 <summary
                   key={index}
