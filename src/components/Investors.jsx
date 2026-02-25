@@ -208,6 +208,17 @@ export default function Investors() {
     }
   ];
 
+  const openOffer =  [
+    {
+      name: "DLOF - SFL",
+      pdf: "/OpenOffer/2025-26/DLOF - SFL.pdf",
+    },
+    {
+      name: "DPS - SFL",
+      pdf: "/OpenOffer/2025-26/DPS - SFL.pdf",
+    }
+  ];
+
   const regulation1425 = [
     {
       name: "Cover Letter Target Company",
@@ -610,6 +621,28 @@ export default function Investors() {
           <details className="subItem">
             <summary>2025-26</summary>
             {EGMNotice25.map((e, index) => {
+              return (
+                <summary
+                  key={index}
+                  className="summeryItems"
+                  onClick={() => {
+                    handleClickOne(e.pdf);
+                  }}
+                >
+                  <span>
+                    <FaFilePdf />
+                  </span>
+                  {e.name}
+                </summary>
+              );
+            })}
+          </details>
+        </details>
+        <details>
+          <summary>Letter of Offer</summary>
+          <details className="subItem">
+            <summary>2025-26</summary>
+            {openOffer.map((e, index) => {
               return (
                 <summary
                   key={index}
