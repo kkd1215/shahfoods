@@ -205,6 +205,10 @@ export default function Investors() {
     {
       name: "EOGM Notice",
       pdf: "/EGMNotice/2025-26/EOGM Notice.pdf",
+    },
+    {
+      name: "Corrigendum to the Notice of EOGM",
+      pdf: "/EGMNotice/2025-26/Corrigendum to the Notice of EOGM.pdf",
     }
   ];
 
