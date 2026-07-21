@@ -215,6 +215,13 @@ export default function Investors() {
       pdf: "/EGMNotice/2025-26/Corrigendum to the Notice of EOGM.pdf",
     }
   ];
+  
+  const PostalballotFiles = [
+    { 
+      name: "Postal Ballot", 
+      pdf: "/PostalBallotForms/PostalBallotForm.pdf"
+    },
+  ];
 
   const openOffer =  [
     {
@@ -292,6 +299,16 @@ export default function Investors() {
         </details>
         <details className="Postal">
           <summary>Postal Ballot Result</summary>
+          {PostalballotFiles.map((item, index) => (
+            <summary
+              key={index}
+              className="summeryItems"
+              onClick={() => handleClickOne(item.pdf)}
+            >
+              <span><FaFilePdf /></span>
+              {item.name}
+            </summary>
+          ))}
         </details>
 
         <details className="Scrutinizer">
