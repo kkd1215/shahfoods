@@ -216,10 +216,10 @@ export default function Investors() {
     }
   ];
   
-  const PostalballotFiles = [
+  const noticesFiles = [
     { 
-      name: "Postal Ballot", 
-      pdf: "/PostalBallotForms/PostalBallotForm.pdf"
+      name: "Postal Ballot Notice", 
+      pdf: "/Notices/PostalBallotNotice.pdf"
     },
   ];
 
@@ -297,9 +297,15 @@ export default function Investors() {
         <details className="Shareholders">
           <summary>Attention of Physical Shareholders</summary>
         </details>
-        <details className="Postal">
+        <details>
           <summary>Postal Ballot Result</summary>
-          {PostalballotFiles.map((item, index) => (
+        </details>
+        <details className="Scrutinizer">
+          <summary>Scrutinizer Report</summary>
+        </details>
+        <details className="Postal">
+          <summary>Notices</summary>
+          {noticesFiles.map((item, index) => (
             <summary
               key={index}
               className="summeryItems"
@@ -309,13 +315,6 @@ export default function Investors() {
               {item.name}
             </summary>
           ))}
-        </details>
-
-        <details className="Scrutinizer">
-          <summary>Scrutinizer Report</summary>
-        </details>
-        <details>
-          <summary>Notices</summary>
         </details>
         <details>
           <summary> Policies</summary>
